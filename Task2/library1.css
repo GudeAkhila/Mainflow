@@ -1,0 +1,147 @@
+
+body{
+   background-image:url('library_img.jpg');
+   background-size:cover;
+}
+
+#navlist {
+    background-color:cornflowerblue;
+    /* overflow: hidden; */
+    padding: 10px 0;
+     display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navlist .l {
+    color:white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight:bold;
+    font-size: 20px;
+}
+#navlist .l:hover {
+    background-color:aqua;
+    color: white;
+}
+
+.search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 6px;
+    margin-right: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+}
+.search button {
+    padding: 6px 10px;
+    background: white;
+    color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    
+}
+
+.search button i {
+    font-size: 18px;
+}
+.search button:hover {
+    background: darkgreen;
+    /* color:blue; */
+}
+@media screen and (max-width: 1000px) {
+    #navlist {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .search {
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    .search input[type="text"] { margin-right: 10px;
+        width: auto;
+    }
+
+    .search button {
+        padding: 4px 8px;
+    }
+
+    .search button i {
+        font-size: 14px;
+    }
+
+    /* #navlist a {
+        width: 200%;
+        text-align: left;
+        /* padding: 10px 20px; 
+    } */
+}
+.a{
+    padding: 100px;
+  
+    /* width: 400px; */
+}
+
+h2{
+    color:white;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    /* border-radius: 10px; */
+    margin-bottom: 10px;
+    
+    /* padding: 100px; */
+}
+
+.head{
+    color:floralwhite;
+    text-align: center;
+    line-height: 1px;
+    margin-top:0px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+   background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color:darkblue;
+   /* padding: 10px 15px;*/
+    text-decoration: none;
+     display: block; 
+}
+.dropdown-content a:hover{
+    background-color:green;
+}
+
+/* Show the dropdown content when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
+    /*background-color: red;*/
+}
+
+
